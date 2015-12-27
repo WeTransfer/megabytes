@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "lib/megabytes.rb",
+    "megabytes.gemspec",
     "spec/megabytes_spec.rb",
     "spec/spec_helper.rb"
   ]
