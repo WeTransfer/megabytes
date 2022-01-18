@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 # A tiny byte size formatter for when you don't need or do not want to use ActiveSupport.
 module Megabytes
-  VERSION = '1.0.0'
+  VERSION = "1.0.0"
   PAIRS = {
-      'B'  => 1024,
-      'KB' => 1024 ** 2,
-      'MB' => 1024 ** 3,
-      'GB' => 1024 ** 4,
-      'TB' => 1024 ** 5,
-      'PB' => 1024 ** 6,
+    "B" => 1024,
+    "KB" => 1024**2,
+    "MB" => 1024**3,
+    "GB" => 1024**4,
+    "TB" => 1024**5,
+    "PB" => 1024**6
   }.freeze
 
   # Returns a formatted byte count for easy reading. Bytes are counted using
@@ -18,6 +20,4 @@ module Megabytes
   def megabytes(bytes)
     PAIRS.each_pair { |e, s| return [(bytes.to_f / (s / 1024)).round(2), e].join if bytes < s }
   end
-
-  extend self
 end
