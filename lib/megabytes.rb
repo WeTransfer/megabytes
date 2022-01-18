@@ -2,7 +2,7 @@
 
 # A tiny byte size formatter for when you don't need or do not want to use ActiveSupport.
 module Megabytes
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
   PAIRS = {
     "B" => 1024,
     "KB" => 1024**2,
