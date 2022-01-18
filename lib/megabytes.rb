@@ -9,7 +9,7 @@ module Megabytes
       'TB' => 1024 ** 5,
       'PB' => 1024 ** 6,
   }.freeze
-  
+
   # Returns a formatted byte count for easy reading. Bytes are counted using
   # the 1024 quantifier.
   #
@@ -18,6 +18,6 @@ module Megabytes
   def megabytes(bytes)
     PAIRS.each_pair { |e, s| return [(bytes.to_f / (s / 1024)).round(2), e].join if bytes < s }
   end
-  
+
   extend self
 end

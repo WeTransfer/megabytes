@@ -1,8 +1,12 @@
-source "http://rubygems.org"
+# frozen_string_literal: true
 
-group :development do
-  gem "rspec", "~> 3.2.0"
-  gem "yard"
-  gem "bundler", "~> 1.0"
-  gem "jeweler", "~> 2.0.1"
-end
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in megabytes.gemspec
+gemspec
+
+gem "rake", "~> 13.0"
+
+gem "rspec", "~> 3.0"
+
+gem "rubocop", "~> 1.21"
