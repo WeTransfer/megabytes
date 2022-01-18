@@ -17,7 +17,7 @@ module Megabytes
   #
   # @param bytes[Fixnum,Bignum] the number of bytes to display
   # @return [String] the formatted size in kilo/mega/giga/tera/whatever bytes
-  def megabytes(bytes)
+  def self.megabytes(bytes)
     PAIRS.each_pair { |e, s| return [(bytes.to_f / (s / 1024)).round(2), e].join if bytes < s }
   end
 end
