@@ -1,4 +1,4 @@
-# megabytes
+# megabytes ![https://app.travis-ci.com/WeTransfer/megabytes.svg?branch=master](https://app.travis-ci.com/WeTransfer/megabytes.svg?branch=master)
 
 Format your byte sizes as megabytes/kilobytes. For when ActiveSupport is too much. Use as a module that
 you include, or as a standalone module. The module is compatible with Opal as well.
@@ -6,7 +6,7 @@ you include, or as a standalone module. The module is compatible with Opal as we
     Megabytes.megabytes(898218921)) #=> "856.61MB"
 
 ## Contributing to megabytes
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
